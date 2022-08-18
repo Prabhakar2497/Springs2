@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean class="com.Player" name="p1">
+<property name="playerName" value="Virat Kohli"/>
+</bean>
+<bean class="com.Team" name="t1">
+<property name="teamName" value="India"/>
+<property name="player" ref="p1"/>
+</bean>
+<bean class="com.Player" name="p2">
+<property name="playerName" value="David Warner"/>
+</bean>
+<bean class="com.Team" name="t2">
+<property name="teamName" value="Australia"/>
+<property name="player" ref="p2"/>
+</bean>
+</beans>

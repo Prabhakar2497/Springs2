@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean class="com.SandalWood" name="m1">
+<property name="name" value="Punith RajKumar"/>
+<property name="producer">
+<list>
+<value>Parvathamma Rajkumar</value>
+</list>
+</property>
+<property name="director">
+<set>
+<value>Prakash</value>
+</set>
+</property>
+<property name="details">
+<map>
+<entry key="Vamshi" value="7.5"></entry>
+</map>
+</property>
+</bean>
+<bean class="com.SandalWood" name="m2">
+<property name="name" value="Yash"/>
+<property name="producer">
+<list>
+<value>Vijay Kiragandhur</value>
+</list>
+</property>
+<property name="director">
+<set>
+<value>Prashanth Neel</value>
+</set>
+</property>
+<property name="details">
+<map>
+<entry key="KGF Chapter-1" value="8.2"></entry>
+</map>
+</property>
+</bean>
+</beans>
